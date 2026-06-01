@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy:         #0d1b2e;
+  --navy-mid:     #162540;
+  --navy-light:   #1e3254;
+  --navy-text:    #0d1b2e;
+  --cream:        #faf8f4;
+  --cream-mid:    #f5f1e8;
+  --cream-dark:   #ede8db;
+  --gold:         #c9a84c;
+  --gold-light:   #fdf0d8;
+  --gold-dark:    #a88730;
+  --text:         #1a1a2e;
+  --text-muted:   #5c5c7a;
+  --text-light:   #9090a8;
+  --border:       #e2d9c8;
+  --border-light: #ede8db;
+  --bg:           #faf8f4;
+  --bg-surface:   #f5f1e8;
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+}
+
+.dark {
+  --navy:         #0a1628;
+  --navy-mid:     #111f38;
+  --navy-light:   #1a2d4a;
+  --navy-text:    #e8e4f0;
+  --cream:        #0f1a2e;
+  --cream-mid:    #111d35;
+  --cream-dark:   #162540;
+  --gold:         #d4a843;
+  --gold-light:   #1e1a08;
+  --gold-dark:    #e8bf6a;
+  --text:         #eeeaf4;
+  --text-muted:   #a8a4bc;
+  --text-light:   #6b6880;
+  --border:       #1e2d45;
+  --border-light: #1a2840;
+  --bg:           #0a1220;
+  --bg-surface:   #0d1828;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  color: var(--text);
+}
+
+::selection { background-color: var(--gold); color: #fff; }
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar        { width: 5px; }
+::-webkit-scrollbar-track  { background: var(--bg); }
+::-webkit-scrollbar-thumb  { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-light); }
