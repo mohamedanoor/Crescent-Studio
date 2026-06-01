@@ -35,7 +35,6 @@ export const projects: Project[] = [
     category: "Project",
     description: "A full-stack web app that transforms any text, topic, or uploaded document into structured study flashcards using Claude AI. Features three study modes, user authentication, deck sharing, PDF export, and a study analytics dashboard.",
     liveUrl:"https://lumincards.app",
-    githubUrl: "https://github.com/mohamedanoor/FlashAI",
     tags:["Python", "Flask", "PostgreSQL", "Claude AI", "JavaScript"],
     status: "Live",
   },
