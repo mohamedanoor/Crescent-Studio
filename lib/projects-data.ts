@@ -22,11 +22,21 @@ export const projects: Project[] = [
   },
   {    
     id: 2,
-    name: "Mohamed Noor Portfolio",
+    name: " Portfolio",
     category: "Portfolio & Personal Branding",
     description: "Personal portfolio site for a General Manager and technologist based in Portland, Maine. Built with Next.js featuring dark mode by default, Geist font, and a clean minimal layout showcasing professional background and projects.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Resend"],
     liveUrl: "https://mohamednoor.com",
     status: "Live",
-}
+},
+{
+    id: 3,
+    name: "LuminCards",
+    category: "Project",
+    description: "A full-stack web app that transforms any text, topic, or uploaded document into structured study flashcards using Claude AI. Features three study modes, user authentication, deck sharing, PDF export, and a study analytics dashboard.",
+    liveUrl:"https://lumincards.app",
+    githubUrl: "https://github.com/mohamedanoor/FlashAI",
+    tags:["Python", "Flask", "PostgreSQL", "Claude AI", "JavaScript"],
+    status: "Live",
+  },
 ];
